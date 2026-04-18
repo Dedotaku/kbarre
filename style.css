@@ -88,20 +88,6 @@ nav.scrolled {
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
-.hero-barre {
-  position: relative;
-  display: inline-block;
-}
-.hero-barre::after {
-  content: '';
-  position: absolute;
-  left: -2px; right: -2px;
-  top: 53%;
-  height: 3px;
-  background: #d4497a;
-  transform: translateY(-50%) rotate(-1.5deg);
-  border-radius: 2px;
-}
 .hero-quote {
   max-width: 560px; font-style: italic; font-size: 1.05rem; color: var(--text);
   border-left: 2px solid var(--gold); padding-left: 1.25rem;
