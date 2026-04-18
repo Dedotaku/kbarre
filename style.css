@@ -253,6 +253,7 @@ footer { background: var(--deep); border-top: 1px solid var(--border); padding: 
   .show-grid, .support-grid, .lieu-grid, .pillars-row { grid-template-columns: 1fr; gap: 2rem; }
   .nav-links { display: none; }
   .hero-logo-bg img { width: 90vw; }
+  .hero-scroll-hint { display: none; }
 }
 
 /* RÉSEAUX SOCIAUX — nav */
