@@ -77,10 +77,30 @@ nav.scrolled {
   animation: fadeUp 0.8s 0.3s ease forwards;
 }
 .hero-sub {
-  font-size: clamp(1rem, 2.5vw, 1.4rem); color: var(--text-muted);
-  letter-spacing: 0.2em; text-transform: uppercase; margin: 1rem 0 2.5rem;
+  font-size: clamp(1.6rem, 4vw, 2.8rem);
+  font-style: italic;
+  letter-spacing: 0.04em;
+  margin: 1.2rem 0 2.5rem;
   opacity: 0; transform: translateY(20px);
   animation: fadeUp 0.8s 0.6s ease forwards;
+  background: linear-gradient(130deg, var(--gold-light) 0%, var(--gold) 45%, #d4497a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.hero-barre {
+  position: relative;
+  display: inline-block;
+}
+.hero-barre::after {
+  content: '';
+  position: absolute;
+  left: -2px; right: -2px;
+  top: 53%;
+  height: 3px;
+  background: #d4497a;
+  transform: translateY(-50%) rotate(-1.5deg);
+  border-radius: 2px;
 }
 .hero-quote {
   max-width: 560px; font-style: italic; font-size: 1.05rem; color: var(--text);
