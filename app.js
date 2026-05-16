@@ -1,34 +1,3 @@
-/* COOKIES */
-function loadGA() {
-  var s = document.createElement('script');
-  s.async = true;
-  s.src = 'https://www.googletagmanager.com/gtag/js?id=G-M9XWK2HSDD';
-  document.head.appendChild(s);
-  window.dataLayer = window.dataLayer || [];
-  window.gtag = function(){ dataLayer.push(arguments); };
-  gtag('js', new Date());
-  gtag('config', 'G-M9XWK2HSDD');
-}
-
-document.addEventListener('DOMContentLoaded', function() {
-  var banner = document.getElementById('cookie-banner');
-  var consent = localStorage.getItem('kbarre-cookie-consent');
-  if (consent === 'accepted') {
-    loadGA();
-  } else if (!consent) {
-    banner.removeAttribute('hidden');
-  }
-  document.getElementById('cookie-accept').addEventListener('click', function() {
-    localStorage.setItem('kbarre-cookie-consent', 'accepted');
-    banner.setAttribute('hidden', '');
-    loadGA();
-  });
-  document.getElementById('cookie-refuse').addEventListener('click', function() {
-    localStorage.setItem('kbarre-cookie-consent', 'refused');
-    banner.setAttribute('hidden', '');
-  });
-});
-
 /* NAV — apparition au scroll */
 var navbar = document.getElementById('navbar');
 window.addEventListener('scroll', function() {
