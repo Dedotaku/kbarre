@@ -1,23 +1,36 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5NZBLRTJ');</script>
+  <!-- End Google Tag Manager -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>K-Barré – Le Cabaret Complètement Barré</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5NZBLRTJ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 
 <nav id="navbar">
   <div class="nav-logo"><a href="#top"><img src="images/logo.png" alt="K-Barré"></a></div>
   <ul class="nav-links">
     <li><a href="#agenda">Agenda</a></li>
     <li><a href="#lieu">Lieu</a></li>
+    <li><a href="#menu">Le Repas</a></li>
     <li><a href="#show">Le Spectacle</a></li>
     <li><a href="#histoire">Notre Histoire</a></li>
     <li><a href="#troupe">La Troupe</a></li>
     <li><a href="#philosophie">Philosophie</a></li>
     <li><a href="#soutien">Soutenir</a></li>
+    <li><a href="#contact">Contact</a></li>
   </ul>
   <div style="display:flex;align-items:center;gap:1rem;">
     <a href="https://www.instagram.com/kbarregrauduroi/" target="_blank" aria-label="Instagram" class="nav-social">
@@ -127,6 +140,99 @@
   </div>
 </div>
 
+<section id="menu">
+  <div class="reveal">
+    <p class="section-label">Le Repas</p>
+    <h2>Au <em>menu</em></h2>
+  </div>
+  <p class="reveal delay-1" style="color:var(--text-muted);margin-bottom:2.5rem;">Trois formules au choix · Entrée · Plat · Desserts</p>
+
+  <div class="menu-tabs reveal delay-2">
+    <button class="menu-tab active" data-menu="terre">Terre</button>
+    <button class="menu-tab" data-menu="mer">Mer</button>
+    <button class="menu-tab" data-menu="vege">Végétarien</button>
+  </div>
+
+  <div class="menu-panel" id="menu-terre">
+    <div class="menu-card">
+      <div class="menu-course">
+        <div class="course-label">Entrée</div>
+        <div class="course-title">Planche assortie</div>
+        <ul class="course-items">
+          <li>Jambon cru de notre sélection</li>
+          <li>Pâté croûte maison</li>
+          <li>Jambon à la truffe</li>
+          <li>Terrine de campagne maison</li>
+          <li>Navette foie gras – figue</li>
+          <li class="course-note">Beurre et cornichons inclus</li>
+        </ul>
+      </div>
+      <div class="menu-sep">◆</div>
+      <div class="menu-course">
+        <div class="course-label">Plat</div>
+        <div class="course-title">Paleron braisé "grand-mère" version été</div>
+        <p class="course-sub">Jus tomate rôtie / basilic</p>
+        <p class="course-accomp">Servi avec pommes de terre grenaille · pois mangetout</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-panel menu-panel-hidden" id="menu-mer">
+    <div class="menu-card">
+      <div class="menu-course">
+        <div class="course-label">Entrée</div>
+        <div class="course-title">Planche assortie</div>
+        <ul class="course-items">
+          <li>Verrine de rouille graulenne</li>
+          <li>Saumon gravlax</li>
+          <li>Crevettes marinées persil–citron</li>
+          <li>Gambas grillées et flambées</li>
+          <li>Saint-Jacques marinées</li>
+        </ul>
+      </div>
+      <div class="menu-sep">◆</div>
+      <div class="menu-course">
+        <div class="course-label">Plat</div>
+        <div class="course-title">Bourride de lotte</div>
+        <p class="course-accomp">Servi avec riz thaï · pois mangetout</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-panel menu-panel-hidden" id="menu-vege">
+    <div class="menu-card">
+      <div class="menu-course">
+        <div class="course-label">Entrée</div>
+        <div class="course-title">Planche assortie</div>
+        <ul class="course-items">
+          <li>Houmous maison et bâtonnets de légumes croquants</li>
+          <li>Caviar d'aubergine à la tahini</li>
+          <li>Antipasti de légumes grillés — burrata, pesto pistache, crème balsamique, noisettes torréfiées <em>(huile de truffe)</em></li>
+          <li>Raïta concombre — menthe, citron vert, cumin torréfié <em>(option : granola salé maison)</em></li>
+          <li>Tarte fine tomate-moutarde — tomates cerises rôties, pesto basilic, chèvre affiné / comté, roquette</li>
+        </ul>
+      </div>
+      <div class="menu-sep">◆</div>
+      <div class="menu-course">
+        <div class="course-label">Plat</div>
+        <div class="course-title">Lasagnes de courgettes</div>
+        <p class="course-sub">Poivrons rouges, aubergine, ricotta et noisettes torréfiées</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-dessert reveal delay-3">
+    <div class="menu-sep">◆</div>
+    <div class="course-label" style="justify-content:center;">Desserts – Mignardises · Pour tous les menus</div>
+    <ul class="dessert-list">
+      <li>Mini mousse au chocolat</li>
+      <li>Fougasse d'Aigues-Mortes</li>
+      <li>Crumble aux fruits rouges</li>
+      <li>Bouchon de chèvre</li>
+    </ul>
+  </div>
+</section>
+
 <section id="show">
   <div class="reveal">
     <p class="section-label">Le Spectacle</p>
@@ -178,8 +284,7 @@
   </div>
   <div class="team-grid">
     <div class="team-card reveal delay-1"><div class="name">David Sarret</div><div class="role">Direction artistique</div><div class="bio">Champion de France de danse sportive, coiffeur entrepreneur, chanteur. Il a imaginé chaque numéro, de la musique à l'éclairage, des tenues à la déco de scène.</div></div>
-    <div class="team-card reveal delay-2"><div class="name">Magali Saurel</div><div class="role">Coach vocale</div><div class="bio">Présidente du concours Le Royaume de la Chanson Française.</div></div>
-    <div class="team-card reveal delay-3"><div class="name">Alexandre</div><div class="role">Professeur de théâtre &amp; metteur en scène</div><div class="bio">Guide la troupe dans la théâtralisation et l'expression scénique.</div></div>
+<div class="team-card reveal delay-3"><div class="name">Alexandre</div><div class="role">Professeur de théâtre &amp; metteur en scène</div><div class="bio">Guide la troupe dans la théâtralisation et l'expression scénique.</div></div>
     <div class="team-card reveal delay-4"><div class="name">Harmony</div><div class="role">Danseuse professionnelle</div><div class="bio">Artiste de cabaret, elle supervise la direction chorégraphique du spectacle.</div></div>
     <div class="team-card reveal delay-5"><div class="name">Candy Williams</div><div class="role">Artiste invitée d'exception</div><div class="bio">Artiste de la troupe « Les garçons de la Butte », présence internationale de Chicago à l'Allemagne, la Suisse et l'Espagne.</div></div>
   </div>
@@ -246,8 +351,9 @@
   </div>
 </section>
 
-<div class="contact-bar">
+<div class="contact-bar" id="contact">
   <p>Contact presse &amp; partenariats : <a href="mailto:contact.kbarre@gmail.com">contact.kbarre@gmail.com</a> · <a href="tel:+33695731293">06 95 73 12 93</a> — David Sarret</p>
+  <p class="contact-address">Siège social : 531 avenue de la Pinède · 30240 Le Grau-du-Roi</p>
 </div>
 
 <footer>
