@@ -175,21 +175,33 @@ section { padding: 5rem 2rem; max-width: 1100px; margin: 0 auto; }
 .story-content p strong { color: var(--text); }
 .story-highlight { border-left: 3px solid var(--gold); padding: 1rem 1.5rem; margin: 2rem 0; font-style: italic; color: var(--text); font-size: 1.05rem; background: rgba(201,168,76,0.06); border-radius: 0 4px 4px 0; }
 
-/* EQUIPE */
-.team-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1px; background: var(--border); border: 1px solid var(--border); border-radius: 4px; overflow: hidden; margin-top: 2rem; }
-.team-card { background: var(--deep2); padding: 1.5rem; transition: background 0.3s; }
-.team-card:hover { background: var(--deep3); }
-.team-card .name { color: var(--text); font-weight: bold; margin-bottom: 0.25rem; }
-.team-card .role { font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.5rem; }
-.team-card .bio { font-size: 0.88rem; color: var(--text-muted); font-style: italic; }
-
 /* TROUPE */
-.troupe-intro { color: var(--text-muted); max-width: 640px; margin-bottom: 2rem; }
-.troupe-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 1px; background: var(--border); border: 1px solid var(--border); border-radius: 4px; overflow: hidden; }
-.troupe-card { background: var(--deep3); padding: 1.25rem; transition: background 0.3s; }
+.troupe-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; margin-top: 2rem; }
+.troupe-card { background: var(--deep3); border: 1px solid var(--border); border-radius: 4px; padding: 1.25rem; transition: background 0.3s; }
 .troupe-card:hover { background: var(--deep2); }
+.troupe-photo, .troupe-photo-placeholder { width: 100%; aspect-ratio: 4 / 3; display: block; margin-bottom: 1rem; }
+.troupe-photo { object-fit: cover; object-position: center; }
+.troupe-photo-placeholder { display: grid; place-items: center; border: 1px dashed var(--border); background: var(--deep); color: var(--text-muted); font-family: sans-serif; font-size: 0.72rem; letter-spacing: 0.08em; text-align: center; text-transform: uppercase; }
 .troupe-card .t-name { color: var(--gold); font-size: 0.9rem; font-weight: bold; margin-bottom: 0.4rem; }
+.troupe-card .t-role { color: var(--gold-light); font-size: 0.78rem; margin-bottom: 0.6rem; }
 .troupe-card .t-bio { font-size: 0.82rem; color: var(--text-muted); font-style: italic; }
+
+/* QUI SOMMES-NOUS */
+.about-section { background: var(--deep2); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+.about-inner { max-width: 1100px; margin: 0 auto; padding: 5rem 2rem; }
+.about-intro { max-width: 780px; color: var(--text); font-size: 1.25rem; line-height: 1.6; margin: 1.5rem 0 1rem; }
+.about-copy { max-width: 850px; color: var(--text-muted); }
+.about-content { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2.5rem 3rem; margin-top: 2.5rem; }
+.about-block { border-top: 1px solid var(--border); padding-top: 1.5rem; scroll-margin-top: 90px; }
+.about-block h3 { color: var(--gold); font-size: 1.1rem; line-height: 1.4; margin-bottom: 1rem; }
+.about-block p { color: var(--text-muted); margin-bottom: 0.75rem; }
+.about-list { list-style: none; }
+.about-list li { padding: 0.75rem 0; border-bottom: 1px solid var(--border); color: var(--text-muted); }
+.about-list li:last-child { border-bottom: 0; }
+.about-list strong { color: var(--text); }
+.about-why { grid-column: 1 / -1; }
+.about-why .about-list { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.5rem; }
+.about-why .about-list li { border-top: 1px solid var(--border); border-bottom: 0; }
 
 /* PHILOSOPHIE */
 .philo-section { background: var(--deep2); }
@@ -328,9 +340,27 @@ nav.nav-open .nav-burger span:nth-child(3) { transform: translateY(-7px) rotate(
 
 /* RESPONSIVE */
 @media (max-width: 700px) {
-  .show-grid, .support-grid, .lieu-grid, .pillars-row { grid-template-columns: 1fr; gap: 2rem; }
+  .show-grid, .support-grid, .pillars-row, .about-content, .about-why .about-list { grid-template-columns: 1fr; gap: 2rem; }
   .hero-logo-bg img { width: 90vw; }
   .hero-scroll-hint { display: none; }
+  .troupe-grid { grid-template-columns: 1fr; }
+  .menu-tabs { width: 100%; }
+  .menu-tab { flex: 1; min-width: 0; padding: 0.75rem 0.25rem; font-size: 0.68rem; letter-spacing: 0.08em; white-space: nowrap; }
+}
+
+@media (min-width: 701px) and (max-width: 950px) {
+  .troupe-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+/* RÉSEAUX SOCIAUX — nav */
+.nav-social {
+  color: var(--text-muted);
+  display: flex; align-items: center;
+  transition: color 0.2s, transform 0.2s;
+}
+.nav-social:hover { color: var(--gold); transform: translateY(-2px); }
+
+@media (max-width: 1200px) {
   .nav-cta-desktop { display: none; }
   .nav-burger { display: flex; }
   .nav-links {
@@ -349,14 +379,6 @@ nav.nav-open .nav-burger span:nth-child(3) { transform: translateY(-7px) rotate(
   }
   .nav-links li:last-child a { border-bottom: none; }
 }
-
-/* RÉSEAUX SOCIAUX — nav */
-.nav-social {
-  color: var(--text-muted);
-  display: flex; align-items: center;
-  transition: color 0.2s, transform 0.2s;
-}
-.nav-social:hover { color: var(--gold); transform: translateY(-2px); }
 
 /* RÉSEAUX SOCIAUX — footer */
 .footer-social {
