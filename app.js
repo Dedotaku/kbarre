@@ -40,17 +40,3 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
-/* MENU — onglets */
-document.addEventListener('DOMContentLoaded', function() {
-  var tabs = document.querySelectorAll('.menu-tab');
-  tabs.forEach(function(tab) {
-    tab.addEventListener('click', function() {
-      tabs.forEach(function(t) { t.classList.remove('active'); });
-      document.querySelectorAll('.menu-panel').forEach(function(p) {
-        p.classList.add('menu-panel-hidden');
-      });
-      tab.classList.add('active');
-      document.getElementById('menu-' + tab.dataset.menu).classList.remove('menu-panel-hidden');
-    });
-  });
-});
