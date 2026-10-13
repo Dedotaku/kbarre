@@ -1,37 +1,24 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-M9XWK2HSDD"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-M9XWK2HSDD');
-  </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Les Garçons du K-Barré – Le Cabaret Complètement Barré</title>
+  <title>Les Garçons du K-Barré</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5NZBLRTJ"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
 
 <nav id="navbar">
   <div class="nav-logo"><a href="#top"><img src="images/logo.png" alt="Les Garçons du K-Barré"></a></div>
-  <ul class="nav-links">
+  <ul class="nav-links" id="navLinks">
     <li><a href="#agenda">Agenda</a></li>
     <li><a href="#qui-sommes-nous">Qui sommes-nous ?</a></li>
     <li><a href="#professionnels">Professionnels</a></li>
     <li><a href="#show">Le Spectacle</a></li>
     <li><a href="#histoire">Notre Histoire</a></li>
-    <li><a href="#troupe">La Troupe</a></li>
+    <li><a href="#compagnie">La Compagnie</a></li>
     <li><a href="#philosophie">Philosophie</a></li>
     <li><a href="#soutien">Soutenir</a></li>
-    <li><a href="#contact">Contact</a></li>
   </ul>
   <div style="display:flex;align-items:center;gap:1rem;">
     <a href="https://www.instagram.com/kbarregrauduroi/" target="_blank" aria-label="Instagram" class="nav-social">
@@ -41,7 +28,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
     </a>
     <a href="#agenda" class="nav-cta nav-cta-desktop">Réserver</a>
-    <button class="nav-burger" id="navBurger" aria-label="Menu" aria-expanded="false">
+    <button class="nav-burger" id="navBurger" type="button" aria-label="Menu" aria-controls="navLinks" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
   </div>
@@ -54,11 +41,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="hero-dot-grid"></div>
   <div class="hero-content">
     <div class="hero-eyebrow">Dîner-spectacle · Le Grau-du-Roi</div>
-    <p class="hero-sub">Le cabaret complètement barré</p>
+    <p class="hero-sub">Le cabaret</p>
     <blockquote class="hero-quote">
       Les Garçons du K-Barré, c'est le théâtre d'une aventure totalement inédite. Des artistes,
       des performers, des danseurs, des transformistes — et tout peut arriver.
-      Des chorégraphies plus ou moins millimétrées, une ambiance complètement barrée.
+      Des chorégraphies plus ou moins millimétrées, une ambiance singulière.
       <cite>David et Jérémy, fondateurs et directeurs artistiques</cite>
     </blockquote>
     <div class="hero-buttons">
@@ -78,54 +65,56 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <p class="section-label">Agenda</p>
     <h2>Prochaine <em>représentation</em></h2>
   </div>
-  <p class="reveal delay-1" style="color:var(--text-muted);margin-bottom:2.5rem;">Casino du Grau-du-Roi — Dîner-spectacle</p>
+    <p class="reveal delay-1" style="color:var(--text-muted);margin-bottom:2.5rem;">Casino du Grau-du-Roi — Dîner-spectacle</p>
   <div class="agenda-list">
-    <div class="agenda-row reveal delay-1">
+      <div class="agenda-row reveal delay-1">
       <div class="agenda-meta">
-        <div class="agenda-date-box"><div class="mois">Nov.</div><div class="jour">28</div><div class="annee">2026</div></div>
-        <div class="agenda-info"><div class="tag">Dîner-spectacle</div><div class="titre">Les Garçons du K-Barré</div><div class="lieu-txt">Casino du Grau-du-Roi</div></div>
+          <img class="agenda-visual" src="images/logo.png" alt="Logo des Garçons du K-Barré">
+          <div class="agenda-date-box"><div class="mois">Nov.</div><div class="jour">28</div><div class="annee">2026</div></div>
+          <div class="agenda-info"><div class="tag">Dîner-spectacle</div><div class="titre">Les Garçons du K-Barré</div><div class="lieu-txt">Casino du Grau-du-Roi</div></div>
       </div>
     </div>
   </div>
 </section>
 
-<div class="about-section" id="qui-sommes-nous">
-  <div class="about-inner">
+  <div class="about-section" id="qui-sommes-nous">
+    <div class="about-inner">
     <div class="reveal">
-      <p class="section-label">Qui sommes-nous ?</p>
-      <h2>La troupe <em>Les Garçons du K-Barré</em></h2>
+        <p class="section-label">Qui sommes-nous ?</p>
+        <h2>La compagnie <em>Les Garçons du K-Barré</em></h2>
     </div>
-    <p class="about-intro reveal delay-1">Le cabaret sur-mesure qui s'invite chez vous !<br>Bienvenue dans l'univers élégant, festif et décalé des Garçons du K-Barré !</p>
-    <p class="about-copy reveal delay-2">Troupe itinérante basée au Grau-du-Roi, nous sillonnons le Gard, l'Hérault et toute la région Occitanie pour transformer vos événements en moments inoubliables. Que ce soit pour un grand show sur scène, un repas-spectacle chaleureux ou une animation festive, nous apportons notre savoir-faire, nos voix, nos chorégraphies et notre touche d'humour directement dans votre établissement ou votre lieu de réception.</p>
-    <div class="about-content">
-      <div class="about-block reveal-left delay-1" id="professionnels">
-        <h3>Nos prestations pour les professionnels &amp; collectivités</h3>
-        <ul class="about-list">
-          <li><strong>Restaurants &amp; Cabarets :</strong> Proposez à votre clientèle une formule dîner-spectacle clé en main.</li>
-          <li><strong>Bars, Pubs &amp; Guinguettes :</strong> Boostez vos soirées avec des animations musicales interactives et un show haut en couleur.</li>
-          <li><strong>Mairies &amp; Collectivités :</strong> Rythmez vos fêtes votives, marchés de Noël, carnavals et événements culturels.</li>
-          <li><strong>Comités d'Entreprises (CE) &amp; Séminaires :</strong> Offrez à vos collaborateurs une soirée d'exception (arbres de Noël, galas, événements de fin d'année).</li>
-          <li><strong>Festivals &amp; Associations :</strong> Participez à l'animation de vos temps forts et événements caritatifs avec un spectacle dynamique et rassembleur.</li>
-        </ul>
-      </div>
-      <div class="about-block reveal-right delay-2">
-        <h3>Vos événements privés &amp; soirées sur-mesure</h3>
-        <p>Parce que chaque célébration est unique, nous nous adaptons à toutes vos envies pour vous accompagner dans les moments importants de votre vie :</p>
-        <ul class="about-list">
-          <li>Mariages &amp; Réceptions</li>
-          <li>Anniversaires &amp; Fêtes de famille</li>
-          <li>Enterrements de vie de jeune fille (EVJF) / garçon (EVG)</li>
-          <li>Soirées privées d'exception</li>
-        </ul>
-      </div>
-      <div class="about-block about-why reveal delay-3">
-        <h3>Pourquoi faire appel aux Garçons du K-Barré ?</h3>
-        <ul class="about-list">
-          <li><strong>Adaptabilité totale :</strong> Du show intimiste au grand spectacle de scène, nous ajustons notre format à votre espace et à votre budget.</li>
-          <li><strong>Clé en main :</strong> Un répertoire varié alliant chant, danse, comédie et glamour.</li>
-          <li><strong>Rayonnement :</strong> Déplacements dans tout le Gard, l'Hérault et l'ensemble de la région Occitanie.</li>
-        </ul>
-      </div>
+      <p class="about-intro reveal delay-1">Le cabaret sur-mesure qui s'invite chez vous !<br>Bienvenue dans l'univers élégant, festif et décalé des Garçons du K-Barré !</p>
+      <p class="about-copy reveal delay-2">Compagnie itinérante basée au Grau-du-Roi, nous sillonnons le Gard, l'Hérault et toute la région Occitanie pour transformer vos événements en moments inoubliables. Que ce soit pour un grand show sur scène, un repas-spectacle chaleureux ou une animation festive, nous apportons notre savoir-faire, nos voix, nos chorégraphies et notre touche d'humour directement dans votre établissement ou votre lieu de réception.</p>
+      <div class="about-content">
+        <div class="about-block reveal-left delay-1" id="professionnels">
+          <h3>🌟 Vous êtes professionnel ? Faites venir la compagnie</h3>
+          <ul class="about-list">
+            <li><strong>Restaurants &amp; Cabarets :</strong> Proposez à votre clientèle une formule dîner-spectacle clé en main.</li>
+            <li><strong>Bars, Pubs &amp; Guinguettes :</strong> Boostez vos soirées avec des animations musicales interactives et un show haut en couleur.</li>
+            <li><strong>Mairies &amp; Collectivités :</strong> Rythmez vos fêtes votives, marchés de Noël, carnavals et événements culturels.</li>
+            <li><strong>Comités d'Entreprises (CE) &amp; Séminaires :</strong> Offrez à vos collaborateurs une soirée d'exception (arbres de Noël, galas, événements de fin d'année).</li>
+            <li><strong>Festivals &amp; Associations :</strong> Participez à l'animation de vos temps forts et événements caritatifs avec un spectacle dynamique et rassembleur.</li>
+          </ul>
+          <a href="#contact" class="btn-primary">Parlons de votre événement</a>
+        </div>
+        <div class="about-block reveal-right delay-2">
+          <h3>✨ Vos Événements Privés &amp; Soirées Sur-Mesure</h3>
+          <p>Parce que chaque célébration est unique, nous nous adaptons à toutes vos envies pour vous accompagner dans les moments importants de votre vie :</p>
+          <ul class="about-list">
+            <li>Mariages &amp; Réceptions</li>
+            <li>Anniversaires &amp; Fêtes de famille</li>
+            <li>Enterrements de vie de jeune fille (EVJF) / garçon (EVG)</li>
+            <li>Soirées privées d'exception</li>
+          </ul>
+        </div>
+        <div class="about-block about-why reveal delay-3">
+          <h3>🎙️ Pourquoi faire appel aux Garçons du K-Barré ?</h3>
+          <ul class="about-list">
+            <li><strong>Adaptabilité totale :</strong> Du show intimiste au grand spectacle de scène, nous ajustons notre format à votre espace et à votre budget.</li>
+            <li><strong>Clé en main :</strong> Un répertoire varié alliant chant, danse, comédie et glamour.</li>
+            <li><strong>Rayonnement :</strong> Déplacements dans tout le Gard, l'Hérault et l'ensemble de la région Occitanie.</li>
+          </ul>
+        </div>
     </div>
   </div>
 </div>
@@ -137,7 +126,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
   <div class="show-grid">
     <div class="show-text reveal-left delay-1">
-      <p>Les Garçons du K-Barré, c'est un dîner-spectacle qui assume d'emblée la couleur : <strong>complètement barré</strong>. Une soirée où l'on ne sait jamais exactement ce qui va arriver, et c'est précisément pour ça qu'on ne décroche pas.</p>
+      <p>Les Garçons du K-Barré, c'est un dîner-spectacle qui assume d'emblée sa couleur. Une soirée où l'on ne sait jamais exactement ce qui va arriver, et c'est précisément pour ça qu'on ne décroche pas.</p>
       <p>Sur scène se succèdent des numéros de danse, de chant, de transformisme, de parodie et d'humour, construits pour faire voyager le public d'une émotion à l'autre sans prévenir. On rit, on est soufflé, on est touché, on admire. <strong>Et on repart avec la banane.</strong></p>
       <p>L'ambition première : que le spectateur entre dans une bulle et n'en sorte qu'à la fin de la soirée. Une déconnexion totale du quotidien.</p>
       <div class="themes">
@@ -146,6 +135,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </div>
     <div class="reveal-right delay-2">
+      <div class="show-pillars">
+        <div class="pillar"><div class="pillar-icon">💃</div><div class="pillar-name">Danse</div></div>
+        <div class="pillar"><div class="pillar-icon">🎤</div><div class="pillar-name">Chant</div></div>
+        <div class="pillar"><div class="pillar-icon">✨</div><div class="pillar-name">Transformisme</div></div>
+        <div class="pillar"><div class="pillar-icon">🎭</div><div class="pillar-name">Humour &amp; Parodie</div></div>
+      </div>
       <div class="open-scene">
         <h3>Une chance pour chacun</h3>
         <ul>
@@ -174,36 +169,36 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </div>
 
-<section id="troupe">
+<section id="compagnie">
   <div class="reveal">
     <p class="section-label">L'Équipe Artistique</p>
-    <h2>Les visages de <em>la troupe</em></h2>
+    <h2>Les visages de <em>la compagnie</em></h2>
   </div>
-  <div class="troupe-grid">
-    <article class="troupe-card reveal delay-1">
-      <img class="troupe-photo" src="images/Equipe_David.jpeg" alt="David sur scène avec la troupe">
+  <div class="compagnie-grid">
+    <article class="compagnie-card reveal delay-1">
+      <img class="compagnie-photo" src="images/Equipe_David.jpeg" alt="David sur scène avec la compagnie">
       <div class="t-name">David</div><div class="t-role">Fondateur &amp; Directeur Artistique</div>
-      <div class="t-bio">Champion de France de Rock 'n' Roll et Boogie-Woogie, David cumule de nombreuses années de scène en tant que danseur et chanteur. À l'origine de la création des Garçons du K-Barré, il insuffle sa passion et sa vision du spectacle en co-dirigeant l'artistique aux côtés de Jérémy pour offrir des shows toujours plus vibrants !</div>
+      <div class="t-bio">Champion de France de Rock 'n' Roll et Boogie-Woogie, David cumule de nombreuses années de scène en tant que danseur et chanteur. À l'origine de la création du K-Barré, il insuffle sa passion et sa vision du spectacle en co-dirigeant l'artistique aux côtés de Jérémy pour offrir des shows toujours plus vibrants !</div>
     </article>
-    <article class="troupe-card reveal delay-2">
-      <img class="troupe-photo" src="images/Equipe_Jeremy.jpeg" alt="Jérémy se préparant devant un miroir">
+    <article class="compagnie-card reveal delay-2">
+      <img class="compagnie-photo" src="images/Equipe_Jeremy.jpeg" alt="Jérémy se préparant devant un miroir">
       <div class="t-name">Jérémy</div><div class="t-role">Chanteur &amp; Performeur</div>
-      <div class="t-bio">Artiste complet et chanteur chevronné, Jérémy a fait ses armes sur scène au sein de la troupe cabaret du Yacht Club ainsi que dans divers groupes musicaux. Fort d'un parcours professionnel accompli dans le management de tournées d'artistes, il apporte aujourd'hui aux Garçons du K-Barré toute sa rigueur, son charisme et son énergie scénique !</div>
+      <div class="t-bio">Artiste complet et chanteur chevronné, Jérémy a fait ses armes sur scène au sein de la compagnie cabaret du Yacht Club ainsi que dans divers groupes musicaux. Fort d'un parcours professionnel accompli dans le management de tournées d'artistes, il apporte aujourd'hui aux Garçons du K-Barré toute sa rigueur, son charisme et son énergie scénique !</div>
     </article>
-    <article class="troupe-card reveal delay-3">
-      <div class="troupe-photo-placeholder" role="img" aria-label="Photo de Jessie à ajouter">Photo de Jessie à ajouter</div>
-      <div class="t-name">Jessie</div><div class="t-role">Artiste</div>
-      <div class="t-bio">Présentation à compléter.</div>
+    <article class="compagnie-card reveal delay-3">
+      <div class="compagnie-photo-placeholder" role="img" aria-label="Photo de Jessy Alia Nymira à ajouter">Photo de Jessy Alia Nymira à ajouter</div>
+      <div class="t-name">Jessy Alia Nymira</div><div class="t-role">Artiste</div>
+      <div class="t-bio">Persuadée d’être une extraterrestre, elle aime se travestir et se grimer en toutes sortes de personnes, elle tente d’être une artiste multidisciplinaire. Du Drag au chant en passant par l’humour, elle saura retenir votre attention. Une véritable troubadour des temps modernes finalement.</div>
     </article>
-    <article class="troupe-card reveal delay-4">
-      <div class="troupe-photo-placeholder" role="img" aria-label="Photo d'Ingrid à ajouter">Photo d'Ingrid à ajouter</div>
-      <div class="t-name">Ingrid</div><div class="t-role">Artiste de la troupe</div>
-      <div class="t-bio">Touche-à-tout, danseuse et dotée d'une voix divine.</div>
+    <article class="compagnie-card reveal delay-4">
+      <img class="compagnie-photo" src="images/Equipe_Ingrid.jpg" alt="Ingrid sur scène">
+      <div class="t-name">Ingrid</div><div class="t-role">Artiste de la compagnie</div>
+      <div class="t-bio">Découvrez Ingrid, l'une des artistes phares du K-Barré qu'elle enflamme depuis déjà un an ! Danseuse passionnée et chanteuse au coffre impressionnant, elle apporte son énergie débordante et sa touche de peps sur scène. Toujours prête à relever tous les défis, Ingrid poursuit avec brio l'aventure aux côtés des Garçons du K-Barré pour vous réserver des performances explosives et plein de surprises !</div>
     </article>
-    <article class="troupe-card reveal delay-5">
-      <div class="troupe-photo-placeholder" role="img" aria-label="Photo de Sylvie à ajouter">Photo de Sylvie à ajouter</div>
-      <div class="t-name">Sylvie</div><div class="t-role">Artiste de la troupe</div>
-      <div class="t-bio">Retraitée et complètement barrée, elle prouve que Les Garçons du K-Barré promeuvent la diversité.</div>
+    <article class="compagnie-card reveal delay-5">
+      <img class="compagnie-photo" src="images/Equipe_Sylvie.jpg" alt="Sylvie sur scène">
+      <div class="t-name">Sylvie</div><div class="t-role">Artiste de la compagnie</div>
+      <div class="t-bio">Sylvie — Notre doyenne ! Qui a dit qu'il y avait un âge pour monter sur scène ? Certainement pas Sylvie ! Habituée des publicités, figurante assidue et égérie d'un grand groupe de casinos, elle adore la lumière du spectacle. Mais sa vraie passion, c'est le chant : micro en main, elle partage son talent avec une belle générosité et un enthousiasme communicatif.</div>
     </article>
   </div>
 </section>
@@ -231,7 +226,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="reveal-left delay-1">
       <p>Pour accompagner la structuration et la professionnalisation du projet, Les Garçons du K-Barré ont lancé une campagne de financement participatif sur HelloAsso.</p>
       <p>Chaque contribution permet de soutenir concrètement la création : costumes, décors, technique, et toute la logistique d'un spectacle multidisciplinaire.</p>
-      <p>Soutenir Les Garçons du K-Barré, c'est soutenir une troupe où des personnes qui n'avaient jamais osé monter sur scène vont le faire pour la première fois.</p>
+      <p>Soutenir Les Garçons du K-Barré, c'est soutenir une compagnie où des personnes qui n'avaient jamais osé monter sur scène vont le faire pour la première fois.</p>
       <p>Les sponsors professionnels sont également les bienvenus !</p>
     </div>
     <div class="support-card reveal-right delay-2">
@@ -247,8 +242,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </section>
 
 <div class="contact-bar" id="contact">
-  <p>Contact presse &amp; partenariats : <a href="mailto:contact.kbarre@gmail.com">contact.kbarre@gmail.com</a> · <a href="tel:+33695731293">06 95 73 12 93</a> — David Sarret</p>
-  <p class="contact-address">Siège social : 531 avenue de la Pinède · 30240 Le Grau-du-Roi</p>
+  <p>Contact presse &amp; partenariats : <a href="/cdn-cgi/l/email-protection#4c2f2322382d2f3862272e2d3e3e290c2b212d2520622f2321"><span class="__cf_email__" data-cfemail="1a7975746e7b796e3471787b68687f5a7d777b737634797577">[email&#160;protected]</span></a> · <a href="tel:+33695731293">06 95 73 12 93</a> — David Sarret</p>
 </div>
 
 <footer>

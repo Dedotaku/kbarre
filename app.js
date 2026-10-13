@@ -24,14 +24,15 @@ window.addEventListener('scroll', checkReveal, { passive: true });
 window.addEventListener('load', checkReveal);
 document.addEventListener('DOMContentLoaded', checkReveal);
 
-/* HAMBURGER */
 document.addEventListener('DOMContentLoaded', function() {
   var burger = document.getElementById('navBurger');
   var nav = document.getElementById('navbar');
+
   burger.addEventListener('click', function() {
     var open = nav.classList.toggle('nav-open');
     burger.setAttribute('aria-expanded', open);
   });
+
   document.querySelectorAll('.nav-links a').forEach(function(link) {
     link.addEventListener('click', function() {
       nav.classList.remove('nav-open');
@@ -39,4 +40,3 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
-
